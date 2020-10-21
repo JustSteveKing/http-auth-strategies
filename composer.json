@@ -5,10 +5,29 @@
     "license": "MIT",
     "authors": [
         {
+            "role": "developer",
             "name": "Steve McDougall",
-            "email": "juststevemcd@gmail.com"
+            "email": "juststevemcd@gmail.com",
+            "homepage": "https://www.juststeveking.uk/"
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^9.5@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "JustSteveKing\\HttpAuth\\Strategies\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JustSteveKing\\HttpAuth\\Strategies\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
 }
