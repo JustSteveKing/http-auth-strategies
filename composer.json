@@ -1,0 +1,14 @@
+{
+    "name": "juststeveking/http-auth-strategies",
+    "description": "A simple PHP package that is used to create different Http Auth Headers",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve McDougall",
+            "email": "juststevemcd@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
