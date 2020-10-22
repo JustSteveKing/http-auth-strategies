@@ -4,7 +4,6 @@
 [![Latest Version][badge-release]][packagist]
 [![PHP Version][badge-php]][php]
 ![tests](https://github.com/JustSteveKing/http-auth-strategies/workflows/tests/badge.svg)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/JustSteveKing/http-auth-strategies/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/JustSteveKing/http-auth-strategies/?branch=main)
 [![Total Downloads][badge-downloads]][downloads]
 
 [badge-release]: https://img.shields.io/packagist/v/juststeveking/http-auth-strategies.svg?style=flat-square&label=release
