@@ -34,7 +34,7 @@ class BasicStrategy implements StrategyInterface
     public function getHeader(string $prefix): array
     {
         return [
-            'Authorization' => "{$prefix} {$this->authString}"
+            'Authorization' => "{$prefix} {$this->authString}",
         ];
     }
 }
