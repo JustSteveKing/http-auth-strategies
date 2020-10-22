@@ -4,6 +4,7 @@
 [![Latest Version][badge-release]][packagist]
 [![PHP Version][badge-php]][php]
 ![tests](https://github.com/JustSteveKing/http-auth-strategies/workflows/tests/badge.svg)
+![Check & fix styling](https://github.com/JustSteveKing/http-auth-strategies/workflows/Code%20style/badge.svg)
 [![Total Downloads][badge-downloads]][downloads]
 
 [badge-release]: https://img.shields.io/packagist/v/juststeveking/http-auth-strategies.svg?style=flat-square&label=release
