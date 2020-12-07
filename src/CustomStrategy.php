@@ -33,13 +33,21 @@ class CustomStrategy implements StrategyInterface
     /**
      * Return the correctly formatted Header value.
      *
-     * @param string $prefix
+     * @param string|null $prefix
      * @return array
      */
-    public function getHeader(string $prefix): array
+    public function getHeader(string $prefix = null): array
     {
+        $headerValue = "";
+
+        if (! is_null($prefix)) {
+            $headerValue .= "{$prefix} ";
+        }
+
+        $headerValue .= "{$this->authString}";
+
         return [
-            $this->headerName => "{$prefix} {$this->authString}",
+            $this->headerName => $headerValue,
         ];
     }
 

@@ -45,3 +45,17 @@ $strategy = new NullStrategy();
 $strategy->getHeader('Bearer');
 // []
 ```
+
+You can now also create your own custom header using the CustomStrategy, for when an API requires something specific that doesn't follow the typical pattern:
+
+```php
+$strategy = new CustomStrategy(
+    'your-api-key'
+);
+
+$strategy->setHeaderName('X-API-KEY');
+
+// Get the Auth header as an array - passing through the required Authorization prefix
+$strategy->getHeader('Bearer');
+// ['X-API-KEY' => 'Bearer your-api-key']
+```

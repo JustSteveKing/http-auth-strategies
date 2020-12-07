@@ -12,10 +12,10 @@ class NullStrategy implements StrategyInterface
     /**
      * Return the correctly formatted Header value.
      *
-     * @param string $prefix
+     * @param string|null $prefix
      * @return array
      */
-    public function getHeader(string $prefix): array
+    public function getHeader(string $prefix = null): array
     {
         return [];
     }

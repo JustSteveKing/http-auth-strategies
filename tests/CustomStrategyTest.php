@@ -61,5 +61,10 @@ class CustomStrategyTest extends TestCase
             ['X-API-KEY' => 'NewPrefix test'],
             $strategy->getHeader('NewPrefix')
         );
+
+        $this->assertEquals(
+            ['X-API-KEY' => 'test'],
+            $strategy->getHeader()
+        );
     }
 }
