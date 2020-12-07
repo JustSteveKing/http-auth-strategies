@@ -2,9 +2,9 @@
 
 namespace JustSteveKing\HttpAuth\Strategies\Tests;
 
-use PHPUnit\Framework\TestCase;
 use JustSteveKing\HttpAuth\Strategies\CustomStrategy;
 use JustSteveKing\HttpAuth\Strategies\Interfaces\StrategyInterface;
+use PHPUnit\Framework\TestCase;
 
 class CustomStrategyTest extends TestCase
 {
