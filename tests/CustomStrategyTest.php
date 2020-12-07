@@ -3,17 +3,17 @@
 namespace JustSteveKing\HttpAuth\Strategies\Tests;
 
 use PHPUnit\Framework\TestCase;
-use JustSteveKing\HttpAuth\Strategies\BasicStrategy;
+use JustSteveKing\HttpAuth\Strategies\CustomStrategy;
 use JustSteveKing\HttpAuth\Strategies\Interfaces\StrategyInterface;
 
-class BasicStrategyTest extends TestCase
+class CustomStrategyTest extends TestCase
 {
     /**
      * @test
      */
     public function it_can_create_a_new_strategy()
     {
-        $strategy = new BasicStrategy('test');
+        $strategy = new CustomStrategy('test');
 
         $this->assertInstanceOf(
             StrategyInterface::class,
@@ -31,7 +31,7 @@ class BasicStrategyTest extends TestCase
      */
     public function it_can_change_the_auth_prefix()
     {
-        $strategy = new BasicStrategy('test');
+        $strategy = new CustomStrategy('test');
 
         $this->assertInstanceOf(
             StrategyInterface::class,
@@ -40,6 +40,25 @@ class BasicStrategyTest extends TestCase
 
         $this->assertEquals(
             ['Authorization' => 'NewPrefix test'],
+            $strategy->getHeader('NewPrefix')
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function it_can_set_a_custom_header_name()
+    {
+        $strategy = new CustomStrategy('test');
+        $strategy->setHeaderName('X-API-KEY');
+
+        $this->assertInstanceOf(
+            StrategyInterface::class,
+            $strategy
+        );
+
+        $this->assertEquals(
+            ['X-API-KEY' => 'NewPrefix test'],
             $strategy->getHeader('NewPrefix')
         );
     }

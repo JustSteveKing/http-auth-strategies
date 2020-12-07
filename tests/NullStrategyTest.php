@@ -2,9 +2,9 @@
 
 namespace JustSteveKing\HttpAuth\Strategies\Tests;
 
-use JustSteveKing\HttpAuth\Strategies\Interfaces\StrategyInterface;
-use JustSteveKing\HttpAuth\Strategies\NullStrategy;
 use PHPUnit\Framework\TestCase;
+use JustSteveKing\HttpAuth\Strategies\NullStrategy;
+use JustSteveKing\HttpAuth\Strategies\Interfaces\StrategyInterface;
 
 class NullStrategyTest extends TestCase
 {
